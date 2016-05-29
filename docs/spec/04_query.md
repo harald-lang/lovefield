@@ -28,7 +28,7 @@ The select query builder accepts sources, search conditions, limiters, sorters,
 and group conditions to construct the query. Its member function signatures are
 defined in [`lf.query.Select`](
 https://github.com/google/lovefield/blob/0146b8c1a951ecc2cf282075e6653d63aac1aed9/lib/query.js#L66-L150).
-All functions provided by select query, except `orderBy()`, can only be called
+All functions provided by select query, except `orderBy()`, `innerJoin()` and `leftOuterJoin()`, can only be called
 once, otherwise an exception will be raised. For example,
 
 ```js
